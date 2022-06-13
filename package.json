@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Saran-deep/cypress-practice#readme",
   "dependencies": {
-    "cypress": "^10.1.0"
+    "cypress": "^10.1.0",
+    "cypress-real-events": "^1.7.0"
   }
 }
