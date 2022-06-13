@@ -1,0 +1,23 @@
+{
+  "name": "cypress-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saran-deep/cypress-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saran-deep/cypress-practice/issues"
+  },
+  "homepage": "https://github.com/Saran-deep/cypress-practice#readme",
+  "dependencies": {
+    "cypress": "^10.1.0"
+  }
+}
