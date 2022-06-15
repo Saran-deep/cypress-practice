@@ -22,7 +22,7 @@ When("User cliks the Sign Up button.", () => {
 });
 
 Then("A snack bar is displayed showing Sign Up is success message.", () => {
-  // SignUpPage.elements
-  //   .loginSuccessSnackbar()
-  //   .should("have.text", "Sign up success.");
+  SignUpPage.elements
+    .loginSuccessSnackbar()
+    .should("have.text", "Sign up success.");
 });

@@ -7,9 +7,7 @@ const addCucumberPreprocessorPlugin =
   require("@badeball/cypress-cucumber-preprocessor").addCucumberPreprocessorPlugin;
 
 module.exports = async (on, config) => {
-  await addCucumberPreprocessorPlugin(on, config); // to allow json to be produced
-
-  // To use esBuild for the bundler when preprocessing
+  await addCucumberPreprocessorPlugin(on, config);
   on(
     "file:preprocessor",
     createBundler({

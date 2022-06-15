@@ -1,1 +1,4 @@
 node_modules/
+cucumber-json-report/
+html-report/
+cucumber-messages.ndjson
