@@ -2,5 +2,7 @@ node_modules/
 cucumber-json-report/
 html-report/
 cucumber-messages.ndjson
-**/screenshots
-**/videos
+*/cypress/videos
+*/cypress/screenshots
+cypress/videos
+cypress/screenshots
