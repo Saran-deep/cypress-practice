@@ -1,7 +1,9 @@
+/// <reference types="cypress-xpath" />
 class SignUp {
   elements = {
     accountLink: () => cy.contains("a", "Account"),
     signUpLink: () => cy.contains("a", "SignUp"),
+    logOutLink: () => cy.contains("a", "Logout"),
     userEmailInput: () =>
       cy.get("div[class='modal size--big open'] input[name='email']"),
     passwordInput: () =>
@@ -11,7 +13,18 @@ class SignUp {
     sinUpButton: () =>
       cy.get("div[class='modal size--big open'] button[type='submit']"),
     modal: () => cy.get("div[class='modal size--big open']"),
-    loginSuccessSnackbar: () => cy.get("div[class='MuiAlert-message']"),
+    loginSuccessSnackbar: () =>
+      cy.get("div[class='MuiAlert-message']", { timeout: 10000 }),
+    emailErrorMsg: () =>
+      cy.xpath("(//p[normalize-space()='Enter a Valid Email'])[1]"),
+    diffrentPasswordErrMsg: () =>
+      cy.xpath(
+        "(//p[normalize-space()='Both password need to be the same'])[1]"
+      ),
+    modalCloseIcon: () =>
+      cy.xpath(
+        "//div[@class='modal size--big open']//div[@class='close-container']"
+      ),
   };
 
   openSignUpModal() {
@@ -37,6 +50,10 @@ class SignUp {
 
   clickSignUpButton() {
     this.elements.sinUpButton().click();
+  }
+
+  closeModal() {
+    this.elements.modalCloseIcon().click();
   }
 }
 
