@@ -22,7 +22,13 @@ jobs:
         uses: actions/upload-artifact@v3.1.0
         with:
           name: Execution Report
-          path: cypress/html-report/
+          path: html-report/
+          
+      - name: Upload Execution Videos
+        uses: actions/upload-artifact@v3.1.0
+        with:
+          name: Execution Report
+          path: cypress/videos/
 
   
   
