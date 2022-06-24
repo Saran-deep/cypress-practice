@@ -1,0 +1,703 @@
+[
+  {
+    "description": "    User is able to login to FoodN application using valid credentials.",
+    "elements": [
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 6,
+        "name": "login Page",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 7,
+            "name": "User is in the FoodN login modal page.",
+            "result": {
+              "duration": 6239000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "login-feature;user-is-able-to-login-using-valid-credentials.",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "User is able to login using valid credentials.",
+        "steps": [
+          {
+            "keyword": "And ",
+            "line": 11,
+            "name": "User enters valid email address.",
+            "result": {
+              "duration": 1301000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 12,
+            "name": "User enters valid password.",
+            "result": {
+              "duration": 611000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 13,
+            "name": "User clicks the login button.",
+            "result": {
+              "duration": 368000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 14,
+            "name": "A snack bar is displayed showing \"Login success.\" message.",
+            "result": {
+              "duration": 2203000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 6,
+        "name": "login Page",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 7,
+            "name": "User is in the FoodN login modal page.",
+            "result": {
+              "duration": 3806000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "login-feature;user-is-not-able-to-login-using-invalid-credentials.",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "User is not able to login using invalid credentials.",
+        "steps": [
+          {
+            "keyword": "And ",
+            "line": 17,
+            "name": "User enters invalid email address \"invalid@gmail.com\".",
+            "result": {
+              "duration": 1219000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 18,
+            "name": "User eters invalid password as \"P@ssw0rd\".",
+            "result": {
+              "duration": 595000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 19,
+            "name": "User click the login button.",
+            "result": {
+              "duration": 323000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 20,
+            "name": "\"There is no user record corresponding to this identifier. The user may have been deleted.\" error message is showed.",
+            "result": {
+              "duration": 751000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-feature",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Login Feature",
+    "uri": "cypress\\integration\\Features\\Authentication\\Login.feature"
+  },
+  {
+    "description": "    User is only able to Sign Up to FoodN using valid credentials.",
+    "elements": [
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 5,
+        "name": "Login page.",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "name": "User is in the FoodN login modal.",
+            "result": {
+              "duration": 3918000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "sign-up-feature;user-is-able-to-sign-up-to-foodn-with-valid-credentials.",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "User is able to Sign Up to FoodN with valid credentials.",
+        "steps": [
+          {
+            "keyword": "And ",
+            "line": 9,
+            "name": "User enters valid email address and both password confirm password as \"Fake@Pass45\".",
+            "result": {
+              "duration": 3677000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 10,
+            "name": "User cliks the Sign Up button.",
+            "result": {
+              "duration": 326000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 11,
+            "name": "A snack bar is displayed showing Sign Up is success message.",
+            "result": {
+              "duration": 5645000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 5,
+        "name": "Login page.",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "name": "User is in the FoodN login modal.",
+            "result": {
+              "duration": 3243000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "sign-up-feature;user-is-not-able-to-create-an-account-with-invalid-email-address.;;2",
+        "keyword": "Scenario Outline",
+        "line": 21,
+        "name": "User is not able to create an account with invalid email address.",
+        "steps": [
+          {
+            "keyword": "And ",
+            "line": 14,
+            "name": "User enters invalid email address as \"invalid.com\".",
+            "result": {
+              "duration": 1095000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 15,
+            "name": "User enters the password and confirm password as \"P@ssw0rd\".",
+            "result": {
+              "duration": 1295000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 16,
+            "name": "User clicks SignUp button.",
+            "result": {
+              "duration": 388000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 17,
+            "name": "\"Enter a Valid Email\" error message is displayed.",
+            "result": {
+              "duration": 373000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 5,
+        "name": "Login page.",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "name": "User is in the FoodN login modal.",
+            "result": {
+              "duration": 3194000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "sign-up-feature;user-is-not-able-to-create-an-account-with-invalid-email-address.;;3",
+        "keyword": "Scenario Outline",
+        "line": 22,
+        "name": "User is not able to create an account with invalid email address.",
+        "steps": [
+          {
+            "keyword": "And ",
+            "line": 14,
+            "name": "User enters invalid email address as \"com.testemail@.com\".",
+            "result": {
+              "duration": 1422000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 15,
+            "name": "User enters the password and confirm password as \"P@ssw0rd\".",
+            "result": {
+              "duration": 1260000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 16,
+            "name": "User clicks SignUp button.",
+            "result": {
+              "duration": 287000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 17,
+            "name": "\"Enter a Valid Email\" error message is displayed.",
+            "result": {
+              "duration": 460000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 5,
+        "name": "Login page.",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "name": "User is in the FoodN login modal.",
+            "result": {
+              "duration": 3229000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "sign-up-feature;user-is-not-able-to-create-an-account-with-both-the-password-and-confirm-password-as-diffrent-but-valid-password.;;2",
+        "keyword": "Scenario Outline",
+        "line": 32,
+        "name": "User is not able to create an account with both the password and confirm password as diffrent but valid password.",
+        "steps": [
+          {
+            "keyword": "And ",
+            "line": 25,
+            "name": "User enters the email address as \"testEmail@domain.com\".",
+            "result": {
+              "duration": 1457000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 26,
+            "name": "User enters both password as \"P@ssw0rd\" and confirm password as \"P1ssw@rd\".",
+            "result": {
+              "duration": 1183000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 27,
+            "name": "User click Sign Up button.",
+            "result": {
+              "duration": 369000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 28,
+            "name": "\"Both password need to be the same\" error message is shown.",
+            "result": {
+              "duration": 373000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 5,
+        "name": "Login page.",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "name": "User is in the FoodN login modal.",
+            "result": {
+              "duration": 3083000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "sign-up-feature;user-is-not-able-to-create-an-account-with-both-the-password-and-confirm-password-as-diffrent-but-valid-password.;;3",
+        "keyword": "Scenario Outline",
+        "line": 33,
+        "name": "User is not able to create an account with both the password and confirm password as diffrent but valid password.",
+        "steps": [
+          {
+            "keyword": "And ",
+            "line": 25,
+            "name": "User enters the email address as \"testEmail@domain.com\".",
+            "result": {
+              "duration": 1394000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 26,
+            "name": "User enters both password as \"Test@123\" and confirm password as \"Teet@123\".",
+            "result": {
+              "duration": 1315000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 27,
+            "name": "User click Sign Up button.",
+            "result": {
+              "duration": 341000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 28,
+            "name": "\"Both password need to be the same\" error message is shown.",
+            "result": {
+              "duration": 401000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "sign-up-feature",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Sign Up Feature",
+    "uri": "cypress\\integration\\Features\\Authentication\\SignUp.feature"
+  },
+  {
+    "description": "    User is able to order food online.",
+    "elements": [
+      {
+        "description": "",
+        "id": "food-ordering-feature;user-is-able-to-order-food-through-foodn-web-appication.",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "User is able to order food through FoodN web appication.",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "name": "User is in the FoodN application and loged in.",
+            "result": {
+              "duration": 7547000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 7,
+            "name": "User scrolls to Our Menu section.",
+            "result": {
+              "duration": 142000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 8,
+            "name": "User selects \"Launch\" from the meal options.",
+            "result": {
+              "duration": 653000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 9,
+            "name": "User selects \"Tandoori Chicken\" from the list of meals displayed.",
+            "result": {
+              "duration": 1976000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 10,
+            "name": "The product overview page is displayed.",
+            "result": {
+              "duration": 174000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 11,
+            "name": "User clicks the buy now button.",
+            "result": {
+              "duration": 602000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 12,
+            "name": "Order summary page is displayed.",
+            "result": {
+              "duration": 151000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 13,
+            "name": "User selects \"Net Banking\" as payment option.",
+            "result": {
+              "duration": 513000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 14,
+            "name": "User clicks Place Order button.",
+            "result": {
+              "duration": 541000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 15,
+            "name": "Order is succuessfully placed and \"Order has been successfully placed.\" is displayed.",
+            "result": {
+              "duration": 3054000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "food-ordering-feature",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Food Ordering Feature",
+    "uri": "cypress\\integration\\Features\\OrderFood\\Orders.feature"
+  }
+]
