@@ -34,3 +34,21 @@ Cypress.Commands.add("logout", (elements) => {
   elements.accountLink().realHover({ pointer: "mouse", scrollBehavior: false });
   elements.logOutLink().click();
 });
+
+Cypress.Commands.add("login", (credentials, elements) => {
+  elements.accountLink().realHover({ pointer: "mouse", scrollBehavior: false });
+  elements.signUpLink().click();
+  elements.modal().should("be.visible");
+  elements.loginSectionLink().click();
+  elements.loginPageCheckpoint().should("have.text", "Login.");
+  elements
+    .userEmailInput()
+    .type(credentials.userEmail)
+    .should("have.value", credentials.userEmail);
+  elements
+    .userPasswordInput()
+    .type(credentials.password)
+    .should("have.value", credentials.password);
+  elements.loginButton().click();
+  elements.loginSuccessSnackbar().should("have.text", "Login success.");
+});
