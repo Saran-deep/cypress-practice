@@ -18,6 +18,9 @@ jobs:
         with:
           start: npm run cypress:runDefault
         continue-on-error: true
+        
+      - name: print filesystem
+        run: ls
 
       - name: Generate report
         run: npm run generate:report
