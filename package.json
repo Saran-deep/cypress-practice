@@ -7,7 +7,8 @@
     "test": "cypress open",
     "cypress:runDefault": "cypress run",
     "cypress:chrome": "cypress run --browser chrome",
-    "cypress:edge": "cypress run --browser edge"
+    "cypress:edge": "cypress run --browser edge",
+    "generate:report": "cd Reporter && node cucumber-html-report.js"
   },
   "repository": {
     "type": "git",

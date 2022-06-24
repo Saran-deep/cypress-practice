@@ -2,34 +2,38 @@ name: UI Automation using cypress.
 
 on:
   push:
-    branches: [ "master" ]
-    
+    branches: ["master"]
+
 jobs:
   cypress-run:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
+    container: cypress/browsers:node14.19.0-chrome100-ff99-edge
+
     steps:
       - name: Checkout
         uses: actions/checkout@v2.4.2
-      - name: Cypress.io
-        uses: cypress-io/github-action@be2de7b1fe1cdafb4a3c8da0a3746476ef636b65
-        with:
-          start: npm run cypress:runDefault
+
+      # - name: Cypress.io
+      #   uses: cypress-io/github-action@be2de7b1fe1cdafb4a3c8da0a3746476ef636b65
+      #   with:
+      #     start: npm run cypress:runDefault
+      #   continue-on-error: true
+
+      - name: Run Cypress tests
+        run: npm run cypress:runDefault
         continue-on-error: true
-          
+
       - name: Generate report
         run: npm run generate:report
-        
+
       - name: Upload report
         uses: actions/upload-artifact@v3.1.0
         with:
           name: Execution Report
           path: html-report/
-          
+
       - name: Upload Execution Videos
         uses: actions/upload-artifact@v3.1.0
         with:
           name: Execution Report
           path: cypress/videos/
-
-  
-  
