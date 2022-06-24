@@ -10,8 +10,16 @@ jobs:
     container: cypress/browsers:node14.19.0-chrome100-ff99-edge
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2.4.2
+      - uses: actions/checkout@v2
+      - name: Install a project with a clean slate
+      - run: |
+          npm ci
+          $(npm bin)/cypress cache path
+          $(npm bin)/cypress cache list
+          $(npm bin)/cypress verify
+          
+#       - name: Checkout
+#         uses: actions/checkout@v2.4.2
 
       # - name: Cypress.io
       #   uses: cypress-io/github-action@be2de7b1fe1cdafb4a3c8da0a3746476ef636b65
