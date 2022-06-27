@@ -18,9 +18,12 @@ jobs:
         with:
           start: npm run cypress:runDefault
         continue-on-error: true
-        
+
       - name: print filesystem
         run: ls
+
+      - name: print json report folder
+        run: cd cucumber-json-report && ls
 
       - name: Generate report
         run: npm run generate:report
@@ -34,5 +37,5 @@ jobs:
       - name: Upload Execution Videos
         uses: actions/upload-artifact@v3.1.0
         with:
-          name: Execution Report
+          name: Execution Video
           path: cypress/videos/
