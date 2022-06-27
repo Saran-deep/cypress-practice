@@ -15,7 +15,7 @@ jobs:
       - name: Cypress.io
         uses: cypress-io/github-action@be2de7b1fe1cdafb4a3c8da0a3746476ef636b65
         with:
-          start: npm run cypress:runDefault
+          start: npm run cypress:chrome
         continue-on-error: true
 
       - name: print filesystem
