@@ -25,6 +25,9 @@ jobs:
       - name: print json report folder
         run: cd cucumber-json-report && ls
 
+      - name: print filesystem
+        run: ls
+
       - name: Generate report
         run: npm run generate:report
 
